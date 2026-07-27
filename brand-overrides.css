@@ -55,6 +55,18 @@ html[data-theme="dark"] .branch-actions .map-button { background: #34302d; borde
 @media (max-width: 420px) { .branch-actions { grid-template-columns: 1fr; } }
 .branch-highlight span { color: #4d4038; }
 html[data-theme="dark"] .branch-highlight span { color: #ece3db; }
+
+/* On touch devices, show each whole photograph first; hover-only overlays do not work on phones. */
+@media (max-width: 800px) {
+  .showroom-card, .showroom-card.featured { min-height: 0; overflow: hidden; }
+  .showroom-card img { position: relative; display: block; width: 100%; height: auto; aspect-ratio: auto; object-fit: contain; background: #ede8e1; }
+  .showroom-card:hover img { transform: none; }
+  .card-overlay { position: relative; inset: auto; padding: 18px 20px; min-height: 0; background: #24211f; }
+  .card-overlay h3 { margin: 5px 0 0; }
+  .card-details { position: relative; inset: auto; transform: none; padding: 20px; }
+  .showroom-card:hover .card-details { transform: none; }
+  html[data-theme="dark"] .card-overlay { background: #111817; }
+}
 html[data-theme="dark"] .branch-highlight { background: rgba(32,29,27,.72); }
 @media (max-width: 800px) { .hero { min-height: auto; } .site-header { gap: 12px; } .header-actions { gap: 8px; } .language-toggle, .theme-toggle { flex: 0 0 38px; } .hero::before { left: -180px; top: -190px; } .hero::after { left: 28px; bottom: 42px; } .floating-whatsapp { right: 16px; bottom: 16px; padding: 8px; } .floating-whatsapp small { display: none; } }
 .product-line span { color: var(--accent); font-weight: 700; }
