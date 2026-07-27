@@ -1,0 +1,61 @@
+/* Jawharat Al Shami brand colours and branch-detail links. */
+:root { --ink: #2a2522; --paper: #f8f5f0; --sand: #e5dbcf; --accent: #c72b31; --cream: #fffdf9; }
+.brand strong { letter-spacing: .06em; }
+.hero { min-height: 500px; background: #fbf8f4; color: var(--ink); border-block: 1px solid #eee5dc; }
+.hero-image { display: none; }
+.card-details .detail-link { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 8px; font-weight: 500; }
+.detail-link span { color: var(--accent); font-size: 1rem; line-height: 1; }
+.theme-toggle { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid #d7c9bf; border-radius: 50%; background: transparent; color: var(--ink); font-size: 1rem; cursor: pointer; }
+.language-toggle { background: var(--accent); color: #fff; box-shadow: 0 4px 12px rgba(199,43,49,.22); }
+.site-header { position: sticky; top: 0; z-index: 20; height: 82px; background: rgba(255,253,249,.96); border-bottom: 1px solid #e9e0d7; backdrop-filter: blur(10px); }
+.nav { gap: 12px; }.nav a { padding: 8px 11px; border-radius: 999px; transition: background .2s, color .2s; }.nav a:hover { background: #f3ebe4; color: var(--accent); }
+.hero { isolation: isolate; overflow: hidden; }.hero::before { content: ""; position: absolute; z-index: 0; left: -125px; top: -145px; width: 390px; height: 390px; border: 46px solid rgba(199,43,49,.08); border-radius: 50%; }.hero::after { content: ""; position: absolute; z-index: 0; left: 70px; bottom: 66px; width: 88px; height: 3px; background: var(--accent); box-shadow: 112px 0 0 rgba(199,43,49,.26), 224px 0 0 rgba(199,43,49,.12); }
+.hero-content { position: relative; z-index: 1; max-width: 710px; }.hero h1 { max-width: 680px; font-size: clamp(3.1rem,5.8vw,5.4rem); }.eyebrow { font-weight: 700; }.hero-copy { max-width: 540px; }.product-line span { color: var(--accent); font-weight: 700; letter-spacing: .04em; }.branch-highlight { background: rgba(255,255,255,.76); padding: 14px 18px 0; border-radius: 12px 12px 0 0; }
+.floating-whatsapp { position: fixed; z-index: 30; right: 22px; bottom: 22px; display: flex; align-items: center; gap: 9px; padding: 8px 13px 8px 8px; border-radius: 999px; background: #25d366; color: #fff; box-shadow: 0 10px 28px rgba(24,104,56,.28); text-decoration: none; font-weight: 700; font-size: .78rem; }.floating-whatsapp span { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; border: 1px solid rgba(255,255,255,.7); font-size: .65rem; }.floating-whatsapp small { font-size: .75rem; }
+.hero-copy { color: #4d4440; font-size: 1.03rem; }.button-quiet { color: var(--ink); border-color: #9f8f85; }.hero-stat { border-color: #b8a9a0; }.hero-stat span { color: #4d4440; }.hero-stat strong { color: var(--accent); }.product-line span { color: #6d5e56; }.product-line b { border-color: #bfae9e; color: var(--ink); background: rgba(255,255,255,.45); }.branch-highlight { color: var(--ink); border-color: #cbbcb2; }.branch-highlight i { color: var(--accent); }
+.phone-number, #header-phone, #contact-phone { direction: ltr; unicode-bidi: isolate; }
+.brand-mark { overflow: hidden; background: #a71925; border-color: #a71925; }
+.brand-mark img { width: 100%; max-width: none; height: 100%; object-fit: cover; object-position: center; }
+.product-line { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; margin: 0 0 23px; }
+.product-line span { color: #f1d6d8; font-size: .78rem; margin-inline-end: 4px; }
+.product-line b { padding: 7px 13px; border: 1px solid rgba(255,255,255,.5); border-radius: 999px; font-size: .78rem; font-weight: 500; }
+.branch-highlight { display: flex; align-items: center; gap: 12px; margin-top: 28px; width: fit-content; color: #fff; text-decoration: none; border-top: 1px solid rgba(255,255,255,.4); padding-top: 15px; }
+.branch-highlight strong { display: grid; place-items: center; background: var(--accent); width: 42px; height: 42px; border-radius: 50%; font: 1.45rem 'Playfair Display',serif; }
+.branch-highlight span { font-size: .76rem; line-height: 1.55; }.branch-highlight i { color: #fff; font-style: normal; font-size: 1.2rem; }
+html[dir="rtl"] .hero-content { padding: 112px 10% 82px 0; text-align: right; margin-right: 0; }
+html[dir="rtl"] .hero-actions, html[dir="rtl"] .product-line { justify-content: flex-start; }
+html[dir="rtl"] .hero-stat { left: 8%; right: auto; border-left: 0; border-right: 1px solid rgba(255,255,255,.45); padding-left: 0; padding-right: 20px; }
+@media (max-width: 800px) { .hero-image { background-position: center, 72% center; background-size: cover, 470px; } html[dir="rtl"] .hero-content { padding: 98px 28px 58px; } .hero-content { padding-bottom: 58px; } .branch-highlight { margin-top: 22px; } }
+
+/* The appearance switch uses the system preference on first visit, then can be changed at any time. */
+html[data-theme="dark"] body { --paper: #191817; --cream: #242220; --ink: #f4eee8; background: var(--paper); color: var(--ink); }
+html[data-theme="dark"] .site-header, html[data-theme="dark"] .contact-card { background: #211f1d; }
+html[data-theme="dark"] .hero { background: #24201e; border-color: #3e3935; }
+html[data-theme="dark"] .hero-image { background-color: #24201e; background-image: linear-gradient(90deg, rgba(36,32,30,.91), rgba(36,32,30,.75)), url('images/camel-mark.jpg'); opacity: .52; }
+html[data-theme="dark"] .hero-copy, html[data-theme="dark"] .hero-stat span, html[data-theme="dark"] .product-line span, html[data-theme="dark"] .section-heading > p { color: #d9d0c8; }
+html[data-theme="dark"] .button-quiet, html[data-theme="dark"] .branch-highlight, html[data-theme="dark"] .product-line b { color: #fff; border-color: #95877e; }
+html[data-theme="dark"] .theme-toggle { border-color: #756960; color: #fff; }
+html[data-theme="dark"] .language-toggle { background: #d33a40; color: #fff; box-shadow: 0 4px 12px rgba(0,0,0,.24); }
+html[data-theme="dark"] footer { border-color: #423d39; }
+html[data-theme="dark"] .showroom-card .card-details { background: #282523; color: #fff; }
+html[data-theme="dark"] .card-details a { color: #fff; }
+html[data-theme="dark"] .contact-card > a:not(.button) { color: #fff; }
+html[data-theme="dark"] .site-header { border-color: #3b3632; }
+html[data-theme="dark"] .nav a:hover { background: #34302d; }
+html[data-theme="dark"] .promise { background: #101817; color: #fff; }
+html[data-theme="dark"] .promise-grid p { color: #d8e0dd; }
+html[data-theme="dark"] .promise-grid article { border-color: #5b6965; }
+html[data-theme="dark"] .product-line span { color: #f1a1a4; }
+.branch-highlight { color: #2a2522; background: #fff; border-color: #d8cbc0; box-shadow: 0 8px 22px rgba(66,43,27,.06); }
+.branch-highlight span { color: #4d4038; }.branch-highlight i { color: var(--accent); }
+.branch-address, .branch-phone { display: flex; align-items: flex-start; gap: 8px; margin: 0 0 8px; }.branch-address > span, .branch-phone > span { color: var(--accent); font-size: 1rem; line-height: 1.2; }
+.branch-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 15px; }.branch-actions a { display: inline-flex; align-items: center; justify-content: center; gap: 7px; min-height: 38px; border-radius: 7px; font-size: .75rem; font-weight: 700; }.branch-actions .map-button { border: 1px solid #d7c8bb; background: #fff; color: #392f29; }.branch-actions .call-button { background: var(--accent); color: #fff; }.branch-actions span { font-size: 1rem; }
+html[data-theme="dark"] .branch-highlight { background: #292523; border-color: #49413c; color: #fff; }.branch-highlight span { color: #ece3db; }
+html[data-theme="dark"] .branch-actions .map-button { background: #34302d; border-color: #5a514b; color: #fff; }.branch-actions .call-button { color: #fff; }
+@media (max-width: 420px) { .branch-actions { grid-template-columns: 1fr; } }
+.branch-highlight span { color: #4d4038; }
+html[data-theme="dark"] .branch-highlight span { color: #ece3db; }
+html[data-theme="dark"] .branch-highlight { background: rgba(32,29,27,.72); }
+@media (max-width: 800px) { .hero { min-height: auto; } .site-header { gap: 12px; } .header-actions { gap: 8px; } .language-toggle, .theme-toggle { flex: 0 0 38px; } .hero::before { left: -180px; top: -190px; } .hero::after { left: 28px; bottom: 42px; } .floating-whatsapp { right: 16px; bottom: 16px; padding: 8px; } .floating-whatsapp small { display: none; } }
+.product-line span { color: var(--accent); font-weight: 700; }
+html[data-theme="dark"] .product-line span { color: #f1a1a4; }

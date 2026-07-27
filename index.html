@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A bilingual showroom website template." />
+    <title>Jawharat Al Shami | Butchery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="brand-overrides.css" />
+  </head>
+  <body>
+    <div class="top-line"></div>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Jawharat Al Shami home">
+        <span class="brand-mark"><img src="images/camel-mark.jpg" alt="Camel head logo" /></span>
+        <span><strong>JAWHARAT AL SHAMI</strong><small data-i18n="group">BUTCHERY</small></span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">About us</a>
+        <a href="#showrooms" data-i18n="navShowrooms">Our showrooms</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="phone-link" id="header-phone" href="tel:+971500000000">+971 50 000 0000</a>
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch colour mode">☾</button>
+        <button class="language-toggle" id="language-toggle" type="button" aria-label="Switch language">E</button>
+        <button class="menu-button" id="menu-button" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-image"></div>
+        <div class="hero-content">
+          <p class="eyebrow" data-i18n="eyebrow">ESTABLISHED IN ARABIA</p>
+          <h1 data-i18n="heroTitle">A trusted name, <em>close to you.</em></h1>
+          <p class="hero-copy" data-i18n="heroCopy">Discover exceptional service and a carefully selected collection across five welcoming destinations.</p>
+          <div class="product-line"><span data-i18n="available">متوفر لدينا</span><b data-i18n="product1">حاشي</b><b data-i18n="product2">خروف</b><b data-i18n="product3">بتالو</b></div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#showrooms" data-i18n="explore">Explore showrooms <span>↘</span></a>
+            <a class="button button-quiet" href="#about" data-i18n="ourStory">Our story</a>
+          </div>
+          <a class="branch-highlight" href="#showrooms"><strong>5</strong><span data-i18n="branchHighlight">فروع في الرياض<br />اضغط لاكتشافها</span><i>↓</i></a>
+        </div>
+      </section>
+
+      <section class="intro section" id="about">
+        <div><p class="eyebrow" data-i18n="whoWeAre">WHO WE ARE</p><h2 data-i18n="introTitle">Built on hospitality.<br /><em>Focused on you.</em></h2></div>
+        <div class="intro-copy"><p data-i18n="introCopy">AL NUR GROUP brings together a passion for quality, Arabian hospitality, and service that feels personal. From our origins in Arabia, we have grown into five distinct showrooms connected by one promise: to make every visit worth remembering.</p><a class="text-link" href="#contact" data-i18n="getInTouch">Get in touch <span>→</span></a></div>
+      </section>
+
+      <section class="showrooms section" id="showrooms">
+        <div class="section-heading"><div><p class="eyebrow" data-i18n="visitUs">VISIT US</p><h2 data-i18n="showroomTitle">Find your nearest<br /><em>showroom.</em></h2></div><p data-i18n="showroomIntro">Five locations. One standard of care.<br />Select a showroom for full details.</p></div>
+        <div class="showroom-grid" id="showroom-grid"></div>
+      </section>
+
+      <section class="promise">
+        <div><p class="eyebrow" data-i18n="ourPromise">OUR PROMISE</p><h2 data-i18n="promiseTitle">Every detail<br />matters.</h2></div>
+        <div class="promise-grid">
+          <article><span>01</span><h3 data-i18n="promise1Title">Warm welcome</h3><p data-i18n="promise1Copy">A relaxed, thoughtful experience from the moment you arrive.</p></article>
+          <article><span>02</span><h3 data-i18n="promise2Title">Trusted expertise</h3><p data-i18n="promise2Copy">A knowledgeable team ready to guide every choice.</p></article>
+          <article><span>03</span><h3 data-i18n="promise3Title">Lasting connection</h3><p data-i18n="promise3Copy">Service that continues long after your visit.</p></article>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div><p class="eyebrow" data-i18n="contactUs">CONTACT US</p><h2 data-i18n="contactTitle">We would love to<br /><em>hear from you.</em></h2><p data-i18n="contactCopy">For enquiries, appointments, or showroom information, our team is here to help.</p></div>
+        <div class="contact-card"><a id="contact-phone" href="tel:+966549820029">+966 54 982 0029</a><a id="contact-email" hidden></a><a class="button button-primary" id="whatsapp-link" href="#" target="_blank" rel="noreferrer" data-i18n="whatsapp">Chat on WhatsApp <span>↗</span></a></div>
+      </section>
+    </main>
+
+    <a class="floating-whatsapp" id="floating-whatsapp" href="#" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp"><span>WA</span><small>WhatsApp</small></a>
+    <footer><a class="brand" href="#top"><span class="brand-mark"><img src="images/camel-mark.jpg" alt="Camel head logo" /></span><span><strong>JAWHARAT AL SHAMI</strong><small data-i18n="group">BUTCHERY</small></span></a><p>© <span id="year"></span> JAWHARAT AL SHAMI. <span data-i18n="rights">All rights reserved.</span></p><a href="#top" data-i18n="backTop">Back to top ↑</a></footer>
+    <script src="content.js"></script><script src="script.js"></script>
+  </body>
+</html>
